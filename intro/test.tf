@@ -1,3 +1,3 @@
 output " test"{
-  value = " THIS IS TEST "
+  value = "THIS IS TEST"
 }
