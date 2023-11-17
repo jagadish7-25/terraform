@@ -26,6 +26,10 @@ output "fruit_stock_first" {
   value = var.fruit_stock["apple"]
 }
 
+output "fruits" {
+  value = var.fruit_stock["kiwi"]
+}
+
 
 output "jagadish_k" {
   value =  var.jagadish_k
