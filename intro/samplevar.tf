@@ -3,7 +3,7 @@ variable "fruit_name" {
 }
 
 output "fruit_name" {
-  value = "var.fruit_name"
+  value = var.fruit_name
 
 }
 
@@ -15,5 +15,5 @@ variable "jagadish_k"{
 }
 
 output "jagadish_k" {
-  value = " var.jagadish_k"
+  value =  var.jagadish_k
 }
