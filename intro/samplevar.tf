@@ -14,6 +14,19 @@ variable "jagadish_k"{
 
 }
 
+
+variable "fruit_stock"{
+  default = {
+    apple = 200
+    kiwi = 250
+  }
+}
+
+output "fruit_stock_first" {
+  value = var.fruit_stock[0]
+}
+
+
 output "jagadish_k" {
   value =  var.jagadish_k
 }
