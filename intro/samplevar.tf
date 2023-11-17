@@ -31,6 +31,25 @@ output "fruits" {
 }
 
 
+
+
 output "jagadish_k" {
   value =  var.jagadish_k
+}
+
+variable "car_prices" {
+  default = {
+    benz = {
+      benz-a = 250
+      benz-b = 600
+    }
+    audi = {
+      audi-a = 350
+      audi-b = 450
+    }
+  }
+}
+
+output "car_prices_benz" {
+  value = var.car_prices["benz"].benz-a
 }
