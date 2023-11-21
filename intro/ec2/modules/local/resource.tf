@@ -1,10 +1,6 @@
-data "aws_instance" "test" {
-  instance_id = "ami-03265a0778a880afb"
+data "aws_ami_ids" "ami" {
+  name_regex = "centos-8"
 
-  filter {
-    name   = "Centos-8-DevOps-Practice"
-    values = ["ami-03265a0778a880afb"]
-  }
-
-
+  owners = ["973714476881"]
 }
+
