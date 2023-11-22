@@ -8,3 +8,6 @@ resource "aws_instance" "instance" {
   }
 }
 
+provisioner "local-exec" {
+  command = "grep -i private_ip"
+}
