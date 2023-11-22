@@ -9,5 +9,5 @@ resource "aws_instance" "instance" {
 }
 
 provisioner "local-exec" {
-  command = "echo ${self.private_ip} >> private_ips.txt"
+  command = "sleep 30 "
 }
